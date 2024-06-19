@@ -53,10 +53,10 @@ foamDictionary -entry multiLevelCoeffs -set "{}" system/decomposeParDict
 foamDictionary -entry scotchCoeffs -set "{}" system/decomposeParDict
 foamDictionary -entry hierarchicalCoeffs -set "{}" system/decomposeParDict
 foamDictionary -entry multiLevelCoeffs.level0 -set "{}" system/decomposeParDict
-foamDictionary -entry multiLevelCoeffs.level0.numberOfSubdomains -set $NODES_N system/decomposeParDict
+foamDictionary -entry multiLevelCoeffs.level0.numberOfSubdomains -set $NODES system/decomposeParDict
 foamDictionary -entry multiLevelCoeffs.level0.method -set scotch system/decomposeParDict
 foamDictionary -entry multiLevelCoeffs.level1 -set "{}" system/decomposeParDict
-foamDictionary -entry multiLevelCoeffs.level1.numberOfSubdomains -set $PPN_N system/decomposeParDict
+foamDictionary -entry multiLevelCoeffs.level1.numberOfSubdomains -set $PPN system/decomposeParDict
 foamDictionary -entry multiLevelCoeffs.level1.method -set scotch system/decomposeParDict
 
 # Additional changes to help simpleFoam work for larger motorbike cases, e.g. 130x52x52
